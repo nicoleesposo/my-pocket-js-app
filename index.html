@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pocket</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="sidebar">
+            <div class="toggle">
+                <div class="title-logo">
+                    <h5>MY <span>POCKET</span></h5>
+                </div>
+                <div class="tab1">Expense</div>
+                <div class="tab2">Income</div>
+                <div class="tab3 active">All</div>
+            </div>
+            <div class="chart">
+                <p>YOUR CHART</p>
+            </div>
+        </div>
+        <div class="content">
+            <header>
+                <div class="greetings">
+                    <h1>Hello Nicole!</h1>
+                    <p class="sub">Here's your budget tracking dashboard.</p>
+                </div>
+            </header>
+            <div class="container-fluid" id="all-cards">
+                <div class="row">
+                    <div class="col-7 card-display-container">
+                        <div class="card-display income">
+                            <div>
+                                <h3>Income</h3>
+                                <h4></h4>
+                            </div>
+                        </div>
+                        <div class="card-display expense">
+                            <div>
+                                <h3>Expense</h3>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="big-card-display balance">
+                            <div>
+                                <h3>Your balance</h3>
+                                <h4></h4>
+                                <p class="date"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- income -->
+            <div class="container-fluid hide" id="income">
+                <div class="row">
+                    <div class="col-7 cards-display-container">
+                        <div class="card-table-container">
+                            <div class="card-header-row">
+                                <div class="row">
+                                    <div class="col-7">Memo</div>
+                                    <div class="col-3">Amount</div>
+                                    <div class="col-2">Action</div>
+                                </div>
+                            </div>
+                            <div class=" list">
+                                <div class="card-row">
+                                    <div class="row">
+                                        <div class="col-7"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-2">
+                                            <a class="edit-btn" ></a>
+                                            <a class="delete-btn" ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-container">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="memo">Income Description</label>
+                                    <input type="email" class="form-control" id="income-title-input" placeholder="Memo for your income">
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount">Amount</label>
+                                    <input type="number" class="form-control" id="income-amount-input" placeholder="0">
+                                </div>
+                                <div class="add-income">Submit</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- expense -->
+            <div class="container-fluid hide" id="expense">
+                <div class="row">
+                    <div class="col-7 cards-display-container">
+                        <div class="card-table-container">
+                            <div class="card-header-row">
+                                <div class="row">
+                                    <div class="col-7">Memo</div>
+                                    <div class="col-3">Amount</div>
+                                    <div class="col-2">Action</div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="card-row">
+                                    <div class="row">
+                                        <div class="col-7"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-2">
+                                            <a class="edit-btn"></a>
+                                            <a class="delete-btn"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-container">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="memo">Expense Description</label>
+                                    <input type="text" class="form-control" id="expense-title-input" placeholder="Memo for your expense">
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount">Amount</label>
+                                    <input type="number" class="form-control" id="expense-amount-input"placeholder="0">
+                                </div>
+                                <div class="add-expense">Submit</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- all -->
+            <div class="container-fluid" id="all">
+                <div class="row">
+                    <div class="col-12 card-display-container">
+                        <div class="cards-table-container">
+                            <div class="card-header-row">
+                                <div class="row">
+                                    <div class="col-7">Memo</div>
+                                    <div class="col-3">Amount</div>
+                                    <div class="col-2">Action</div>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="card-row">
+                                    <div class="row">
+                                        <div class="col-7"></div>
+                                        <div class="col-3"></div>
+                                        <div class="col-2">
+                                            <a class="edit-btn" href="#"></a>
+                                            <a class="delete-btn"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.main {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    background: #342e59;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    height: 100vh;
+    width: calc(100vw - 200px);
+    background: #2c254a;
+}
+
+header {
+    height: 250px;
+    width: 100%;
+    background: #261f40;
+    padding: 25px;
+    display: flex !important;
+    align-items: center;
+}
+
+.title-logo {
+    text-align: center;
+}
+
+.title-logo h5 {
+    color: #fff;
+}
+
+.title-logo h5 span {
+    color: #e20281;
+}
+
+h1 {
+    color: #fff;
+}
+
+.sub {
+    color: #665e94;
+}
+
+#all-cards {
+    margin-top: -125px;
+}
+
+.card-display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cards-display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-display {
+    width: 48%;
+    padding: 25px;
+    background-color: #342d57;
+    display: inline-block;
+    height: 200px;
+}
+
+.big-card-display {
+    width: 100%;
+    padding: 25px;
+    background: rgb(243,1,123);
+    background: linear-gradient(222deg, rgba(243,1,123,1) 0%, rgba(91,15,182,1) 57%);
+    height: 270px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.big-card-display div {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.card-table-container {
+    width: 100%;
+}
+
+.active {
+    background: #3b3363;
+    color: #fff !important;
+}
+
+#all .list .card-row #edit {
+    display: none;
+}
+
+.tab1, .tab2, .tab3 {
+    color: #533c99;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#expense, #income, #all {
+    margin-top: 35px;
+}
+
+
+.card-header-row {
+    color: #665e94;
+    font-weight: bold;
+    padding: 15px 8px;
+}
+
+.card-row {
+    border: 1px solid #332a56;
+    padding: 10px;
+    color: #c4c2cd;
+    margin: 2px 0;
+}
+
+.cards-table-container {
+    width: 100%;
+}
+
+#edit {
+    color: #d69850;
+    margin-right: 15px;
+}
+
+#delete {
+    color: #f65164;
+}
+
+.card-align {
+    display: flex;
+    align-self: center;
+}
+
+.memo {
+    color: #e4759a;
+}
+
+.form-container {
+    border: 1px solid #332a56;
+    padding: 25px;
+}
+
+label {
+    color: #fff;
+}
+
+.form-container .form-group ::placeholder {
+    color: #bab6d6;
+}
+
+.add-expense, .add-income {
+    background: #5b40a8;
+    width: 150px;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-display {
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+}
+
+.card-display h3 {
+    font-size: 20px;
+    color: #665e93;
+}
+
+/* .card-display h4 {
+    font-size: 40px;
+    color: #fff;
+} */
+
+.income h4 {
+    color:#fff;
+}
+
+.expense h4 {
+    color: #f0624d;
+}
+
+.big-card-display h3 {
+    font-size: 22px;
+}
+
+.big-card-display h4 {
+    font-size: 60px;
+}
+
+.big-card-display .date {
+    letter-spacing: 2px;
+}
+
+.chart {
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #3b3363;
+    margin-top: 15px;
+}
+
+.chart p {
+    color: #fff;
+    font-size: 13.5px;
+}
+
+/* canvas {
+    height: 80%;
+    width: 80%;
+} */
