@@ -143,11 +143,11 @@ function updateUI(){
     outcome = calculateTotal("expense", ENTRY_LIST);
     balance = Math.abs(calculateBalance(income, outcome));
 
-    let sign = (income >= outcome) ? "$" : "-$";
+    let sign = (income >= outcome) ? "₱" : "-₱";
 
     balanceEl.innerHTML = `<small>${sign}</small>${balance}`;
-    outcomeTotalEl.innerHTML = `<small>$</small>${outcome}`;
-    incomeTotalEl.innerHTML = `<small>$</small>${income}`;
+    outcomeTotalEl.innerHTML = `<small>₱</small>${outcome}`;
+    incomeTotalEl.innerHTML = `<small>₱</small>${income}`;
 
     clearElement( [expenseList, incomeList, allList] );
 
@@ -169,7 +169,7 @@ function showEntry(list, type, title, amount, id){
         <div class="card-row" id="${id}" class="${type}">
             <div class="row">
                 <div class="col-7 card-align memo">${title}</div>
-                <div class="col-3 card-align">$${amount}</div>
+                <div class="col-3 card-align">₱${amount}</div>
                 <div class="col-2 card-align" id="${id}">
                     <a id="edit" class="edit-btn">Edit</a>
                     <a id="delete" class="delete-btn">Delete</a>
